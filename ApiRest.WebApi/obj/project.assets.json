@@ -82,6 +82,70 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ApiRest.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ApiRest.Entities": "1.0.0",
+          "ApiRest.Repository": "1.0.0",
+          "ApiRest.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ApiRest.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRest.Application.dll": {}
+        }
+      },
+      "ApiRest.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ApiRest.Entities": "1.0.0",
+          "ApiRest.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ApiRest.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRest.DataAccess.dll": {}
+        }
+      },
+      "ApiRest.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ApiRest.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRest.Entities.dll": {}
+        }
+      },
+      "ApiRest.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ApiRest.DataAccess": "1.0.0",
+          "ApiRest.Entities": "1.0.0",
+          "ApiRest.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ApiRest.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRest.Repository.dll": {}
+        }
+      },
+      "ApiRest.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ApiRest.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRest.Services.dll": {}
+        }
       }
     }
   },
@@ -271,10 +335,38 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ApiRest.Application/1.0.0": {
+      "type": "project",
+      "path": "../ApiRest.Application/ApiRest.Application.csproj",
+      "msbuildProject": "../ApiRest.Application/ApiRest.Application.csproj"
+    },
+    "ApiRest.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../ApiRest.DataAccess/ApiRest.DataAccess.csproj",
+      "msbuildProject": "../ApiRest.DataAccess/ApiRest.DataAccess.csproj"
+    },
+    "ApiRest.Entities/1.0.0": {
+      "type": "project",
+      "path": "../ApiRest.Entities/ApiRest.Entities.csproj",
+      "msbuildProject": "../ApiRest.Entities/ApiRest.Entities.csproj"
+    },
+    "ApiRest.Repository/1.0.0": {
+      "type": "project",
+      "path": "../ApiRest.Repository/ApiRest.Repository.csproj",
+      "msbuildProject": "../ApiRest.Repository/ApiRest.Repository.csproj"
+    },
+    "ApiRest.Services/1.0.0": {
+      "type": "project",
+      "path": "../ApiRest.Services/ApiRest.Services.csproj",
+      "msbuildProject": "../ApiRest.Services/ApiRest.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ApiRest.Application >= 1.0.0",
+      "ApiRest.Entities >= 1.0.0",
+      "ApiRest.Services >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.11.1",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -315,7 +407,17 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Application\\ApiRest.Application.csproj": {
+              "projectPath": "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Application\\ApiRest.Application.csproj"
+            },
+            "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Entities\\ApiRest.Entities.csproj": {
+              "projectPath": "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Entities\\ApiRest.Entities.csproj"
+            },
+            "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Services\\ApiRest.Services.csproj": {
+              "projectPath": "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Services\\ApiRest.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

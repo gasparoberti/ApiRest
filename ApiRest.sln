@@ -5,6 +5,16 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest.WebApi", "ApiRest.WebApi\ApiRest.WebApi.csproj", "{5191D9E7-D36B-4771-AF08-D6574082D4F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest.Application", "ApiRest.Application\ApiRest.Application.csproj", "{9D7F5D01-7E46-4616-994A-B1C29946E0E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest.Entities", "ApiRest.Entities\ApiRest.Entities.csproj", "{C2E57D3B-CDC8-4BEF-A896-0BE6DE6F1603}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest.Repository", "ApiRest.Repository\ApiRest.Repository.csproj", "{29AD7ADF-3314-44DB-9CB1-12E80D11835B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest.Services", "ApiRest.Services\ApiRest.Services.csproj", "{E1377879-A9AA-4DF6-AAEB-DC5096C11CE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest.DataAccess", "ApiRest.DataAccess\ApiRest.DataAccess.csproj", "{02C88834-FD03-4AA3-A3B2-9AF3F89C5A32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{5191D9E7-D36B-4771-AF08-D6574082D4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5191D9E7-D36B-4771-AF08-D6574082D4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5191D9E7-D36B-4771-AF08-D6574082D4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D7F5D01-7E46-4616-994A-B1C29946E0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D7F5D01-7E46-4616-994A-B1C29946E0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D7F5D01-7E46-4616-994A-B1C29946E0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D7F5D01-7E46-4616-994A-B1C29946E0E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E57D3B-CDC8-4BEF-A896-0BE6DE6F1603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E57D3B-CDC8-4BEF-A896-0BE6DE6F1603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E57D3B-CDC8-4BEF-A896-0BE6DE6F1603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E57D3B-CDC8-4BEF-A896-0BE6DE6F1603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29AD7ADF-3314-44DB-9CB1-12E80D11835B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29AD7ADF-3314-44DB-9CB1-12E80D11835B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29AD7ADF-3314-44DB-9CB1-12E80D11835B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29AD7ADF-3314-44DB-9CB1-12E80D11835B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1377879-A9AA-4DF6-AAEB-DC5096C11CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1377879-A9AA-4DF6-AAEB-DC5096C11CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1377879-A9AA-4DF6-AAEB-DC5096C11CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1377879-A9AA-4DF6-AAEB-DC5096C11CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C88834-FD03-4AA3-A3B2-9AF3F89C5A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C88834-FD03-4AA3-A3B2-9AF3F89C5A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C88834-FD03-4AA3-A3B2-9AF3F89C5A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C88834-FD03-4AA3-A3B2-9AF3F89C5A32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
