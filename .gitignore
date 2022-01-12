@@ -1,0 +1,17 @@
+EjemploApiRest.Abstractions/bin/
+EjemploApiRest.Abstractions/obj/
+EjemploApiRest.Application/bin/
+.vs/
+EjemploApiRest.Application/obj/
+EjemploApiRest.DataAccess/bin/
+EjemploApiRest.DataAccess/obj/
+EjemploApiRest.Entities/bin/
+EjemploApiRest.Entities/obj/
+EjemploApiRest.Repository/bin/
+EjemploApiRest.Repository/obj/
+EjemploApiRest.Services/obj/
+EjemploApiRest.Services/bin/
+EjemploApiRest.Webapi/bin/
+EjemploApiRest.Webapi/obj/
+bin/
+obj/
