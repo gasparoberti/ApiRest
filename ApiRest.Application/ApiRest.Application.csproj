@@ -4,4 +4,11 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiRest.Abstractions\ApiRest.Abstractions.csproj" />
+    <ProjectReference Include="..\ApiRest.Entities\ApiRest.Entities.csproj" />
+    <ProjectReference Include="..\ApiRest.Repository\ApiRest.Repository.csproj" />
+    <ProjectReference Include="..\ApiRest.Services\ApiRest.Services.csproj" />
+  </ItemGroup>
+
 </Project>

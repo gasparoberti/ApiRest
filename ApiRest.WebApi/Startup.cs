@@ -1,3 +1,5 @@
+using ApiRest.Application;
+using ApiRest.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +34,9 @@ namespace ApiRest.WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiRest.WebApi", Version = "v1" });
             });
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));     //indico al contenedor que cuando se pida una interfaz IRepository se de un objeto instanciado de Repository
+            services.AddScoped(typeof(IApplication<>), typeof(Application<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

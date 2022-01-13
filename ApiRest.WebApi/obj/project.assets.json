@@ -83,10 +83,21 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "ApiRest.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ApiRest.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRest.Abstractions.dll": {}
+        }
+      },
       "ApiRest.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "ApiRest.Abstractions": "1.0.0",
           "ApiRest.Entities": "1.0.0",
           "ApiRest.Repository": "1.0.0",
           "ApiRest.Services": "1.0.0"
@@ -126,6 +137,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "ApiRest.Abstractions": "1.0.0",
           "ApiRest.DataAccess": "1.0.0",
           "ApiRest.Entities": "1.0.0",
           "ApiRest.Services": "1.0.0"
@@ -335,6 +347,11 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ApiRest.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../ApiRest.Abstractions/ApiRest.Abstractions.csproj",
+      "msbuildProject": "../ApiRest.Abstractions/ApiRest.Abstractions.csproj"
     },
     "ApiRest.Application/1.0.0": {
       "type": "project",

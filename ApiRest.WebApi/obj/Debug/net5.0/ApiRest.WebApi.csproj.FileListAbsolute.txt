@@ -27,3 +27,15 @@ D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\obj\Debug\net5.0\ApiRest.WebAp
 D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\obj\Debug\net5.0\ref\ApiRest.WebApi.dll
 D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\obj\Debug\net5.0\ApiRest.WebApi.pdb
 D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\obj\Debug\net5.0\ApiRest.WebApi.genruntimeconfig.cache
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Abstractions.dll
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Application.dll
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.DataAccess.dll
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Entities.dll
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Repository.dll
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Services.dll
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Application.pdb
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Entities.pdb
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Services.pdb
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Abstractions.pdb
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.DataAccess.pdb
+D:\Documentos\Proyectos\c#\ApiRest\ApiRest.WebApi\bin\Debug\net5.0\ApiRest.Repository.pdb
