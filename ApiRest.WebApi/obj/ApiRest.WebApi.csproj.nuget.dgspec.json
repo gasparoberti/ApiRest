@@ -170,6 +170,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Abstractions\\ApiRest.Abstractions.csproj": {
+                "projectPath": "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Abstractions\\ApiRest.Abstractions.csproj"
+              },
               "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Entities\\ApiRest.Entities.csproj": {
                 "projectPath": "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Entities\\ApiRest.Entities.csproj"
               },
@@ -237,7 +240,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Abstractions\\ApiRest.Abstractions.csproj": {
+                "projectPath": "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Abstractions\\ApiRest.Abstractions.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
