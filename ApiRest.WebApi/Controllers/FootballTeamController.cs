@@ -1,5 +1,6 @@
 ﻿using ApiRest.Application;
 using ApiRest.Entities;
+using ApiRest.WebApi.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -23,12 +24,26 @@ namespace ApiRest.WebApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(new FootballTeam()
-            {
-                Nombre = "San Lorenzo",
-                Score = 100
-            });
+            //return Ok(new FootballTeam()
+            //{
+            //    Nombre = "San Lorenzo",
+            //    Score = 100
+            //});
 
+            return Ok(_football.GetAll());
+
+        }
+
+        [HttpPost]
+        public IActionResult Save(FootBallTeamDTO dto)
+        {
+            var f = new FootballTeam()
+            {
+                Name = dto.Name,
+                Score = dto.Score
+            };
+
+            return Ok(_football.Save(f));
         }
     }
 }

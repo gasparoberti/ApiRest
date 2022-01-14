@@ -1,10 +1,11 @@
 ﻿using ApiRest.Abstractions;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ApiRest.DataAccess
 {
-    public class DbContext<T> : IDbContext<T>
+    public class DbContext<T> : IDbContext<T> where T : IEntity
     {
         IList<T> _data;
 
@@ -15,22 +16,34 @@ namespace ApiRest.DataAccess
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var e = _data.Where(u => u.Id.Equals(id)).FirstOrDefault();
+
+            if (e != null)
+                _data.Remove(e);
         }
 
         public IList<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _data;
         }
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return _data.Where(u => u.Id.Equals(id)).FirstOrDefault();
         }
 
         public T Save(T entity)
         {
-            throw new NotImplementedException();
+            if (entity.Id.Equals(0))    //no tiene Id
+                //inserta
+                _data.Add(entity);
+            else
+            {
+
+            }
+
+                return entity;
+                //actulizar
         }
     }
 }
