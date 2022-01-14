@@ -1,49 +1,44 @@
 ﻿using ApiRest.Abstractions;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace ApiRest.DataAccess
 {
-    public class DbContext<T> : IDbContext<T> where T : IEntity
+    public class DbContext<T> : IDbContext<T> where T : class, IEntity
     {
-        IList<T> _data;
+        DbSet<T> _items;
 
-        public DbContext()
+        ApiDbContext _ctx;
+
+        public DbContext(ApiDbContext ctx)
         {
-            _data = new List<T>();
+            _ctx = ctx;
+            _items = ctx.Set<T>();
         }
 
         public void Delete(int id)
         {
-            var e = _data.Where(u => u.Id.Equals(id)).FirstOrDefault();
 
-            if (e != null)
-                _data.Remove(e);
         }
 
         public IList<T> GetAll()
         {
-            return _data;
+            return _items.ToList();
         }
 
         public T GetById(int id)
         {
-            return _data.Where(u => u.Id.Equals(id)).FirstOrDefault();
+           return _items.Where(i => i.Id.Equals(id)).FirstOrDefault();
         }
 
         public T Save(T entity)
         {
-            if (entity.Id.Equals(0))    //no tiene Id
-                //inserta
-                _data.Add(entity);
-            else
-            {
+            _items.Add(entity);
+            _ctx.SaveChanges();
 
-            }
-
-                return entity;
-                //actulizar
+            return entity;
         }
     }
 }
