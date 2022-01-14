@@ -24,12 +24,6 @@ namespace ApiRest.WebApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            //return Ok(new FootballTeam()
-            //{
-            //    Nombre = "San Lorenzo",
-            //    Score = 100
-            //});
-
             return Ok(_football.GetAll());
 
         }
@@ -40,7 +34,8 @@ namespace ApiRest.WebApi.Controllers
             var f = new FootballTeam()
             {
                 Name = dto.Name,
-                Score = dto.Score
+                Score = dto.Score,
+                Manager = dto.Manager
             };
 
             return Ok(_football.Save(f));
