@@ -487,7 +487,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Abstractions\\ApiRest.Abstractions.csproj": {
+                "projectPath": "D:\\Documentos\\Proyectos\\c#\\ApiRest\\ApiRest.Abstractions\\ApiRest.Abstractions.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

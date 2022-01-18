@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ApiRest.WebApi.Configuration
+namespace ApiRest.Services
 {
     public class JWTConfig
     {

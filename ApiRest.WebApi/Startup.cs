@@ -2,7 +2,7 @@ using ApiRest.Abstractions;
 using ApiRest.Application;
 using ApiRest.DataAccess;
 using ApiRest.Repository;
-using ApiRest.WebApi.Configuration;
+using ApiRest.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -75,6 +75,7 @@ namespace ApiRest.WebApi
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));     //indico al contenedor que cuando se pida una interfaz IRepository se de un objeto instanciado de Repository
             services.AddScoped(typeof(IApplication<>), typeof(Application<>));
             services.AddScoped(typeof(IDbContext<>), typeof(DbContext<>));
+            services.AddScoped(typeof(ITokenHandlerService), typeof(TokenHandlerService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
